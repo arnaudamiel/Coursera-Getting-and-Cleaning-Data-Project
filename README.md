@@ -10,9 +10,11 @@ The script will process the provided data and create 2 datasets and CSV files co
 Dataset1
 --------
 This dataset is a dataframe containing only the measurements on the mean and standard deviation for each measurement.
-It is saved in the Dataset1.csv file
+This is done by only keeping variables from the original dataset which name contains 'std()' or 'mean()'.
+It is saved in the Dataset1.csv file if this file does not already exist.
 
 Dataset2
 --------
 This dataset is a dataframe containing the average of each variable for each activity and each subject.
-It is saved in the Dataset2.csv file
+All variables keep the original name but have '-AVERAGE' appended to them.
+It is saved in the Dataset2.csv file if this file does not already exist.
